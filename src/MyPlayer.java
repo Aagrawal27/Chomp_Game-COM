@@ -29,6 +29,16 @@ public class MyPlayer {
          * Add your code to return the row and the column of the chip you want to take.
          * You'll be returning a data type called Point which consists of two integers.
          */
+        int[] boards = new int[19];
+        for(int x =0; x<=3; x++){
+            for(int y =0; y<=3; y++){
+                for(int z = 0; z<=3; z++){
+                    if(y<=x&&z<=y) {
+                        System.out.println(String.valueOf(x) + String.valueOf(y) + String.valueOf(z));
+                    }
+                }
+            }
+        }
 
         Point myMove = new Point(row, column);
         return myMove;
